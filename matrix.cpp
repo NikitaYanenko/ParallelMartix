@@ -119,7 +119,7 @@ std::istream& operator>>(std::istream& is, Matrix& matrix) {
 	return is;
 }
 
-const Matrix operator*(const Matrix left, const Matrix right) {
+const Matrix operator*(const Matrix& left, const Matrix& right) {
 	bool isAgree = left.isAgree(right);
 
 	if (!Matrix::threadPool) {
