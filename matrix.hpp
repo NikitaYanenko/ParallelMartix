@@ -31,7 +31,7 @@ public:
 	friend std::istream& operator>>(std::istream& is, Matrix& matrix);
 
 	// parallel matrix multiplication
-	friend const Matrix operator*(const Matrix left, const Matrix right);
+	friend const Matrix operator*(const Matrix& left, const Matrix& right);
 	friend void rowToColumnMethod(const std::vector<int>& vectorRow, const Matrix& matrix, std::vector<int>& result);
 
 	// returns the flag whether multiplication is possible 
